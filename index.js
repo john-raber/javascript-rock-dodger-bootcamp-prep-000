@@ -137,7 +137,7 @@ function createRock(x) {
 function endGame() {
   window.clearInterval(gameInterval);
   while (ROCKS.length > 0) {
-    console.log(ROCKS)
+    console.log(ROCKS);
     ROCKS[0].remove();
     ROCKS.shift();
   }
