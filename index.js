@@ -136,7 +136,7 @@ function createRock(x) {
  
 function endGame() {
   window.clearInterval(gameInterval);
-  while (GAME.querySelector('.rock')) {
+  while (ROCKS.length > 0) {
     console.log("hit")
     GAME.querySelector('.rock').remove();
     ROCKS.shift();
