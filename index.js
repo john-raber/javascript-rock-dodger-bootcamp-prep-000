@@ -138,7 +138,7 @@ function endGame() {
   window.clearInterval(gameInterval);
   while (ROCKS.length > 0) {
     console.log(ROCKS)
-    GAME.querySelector('.rock').remove();
+    ROCKS[0].remove();
     ROCKS.shift();
   }
   window.removeEventListener('keydown', moveDodger);
